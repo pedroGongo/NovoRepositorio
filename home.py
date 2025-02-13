@@ -1,9 +1,36 @@
 #Importações das Biblioteca
 import streamlit as st
 from firebase_admin import firestore
+import firebase_admin
 import time
 import datetime
 from streamlit_autorefresh import st_autorefresh
+#Importações das Biblioteca
+import firebase_admin._auth_client
+import firebase_admin.auth
+import streamlit as st
+import firebase_admin
+from firebase_admin import credentials
+import requests
+import jwt  
+from jwt import DecodeError
+
+# Configuração do Firebase 
+firebaseConfig = {
+    "apiKey": "AIzaSyBFIMnD7uOvASP08_a9Zp6px_ub4DWl2aI",
+    "authDomain": "anotherproject-5e811.firebaseapp.com",
+    "projectId": "anotherproject-5e811",
+    "storageBucket":"anotherproject-5e811.firebasestorage.app",
+    "messagingSenderId": "1069155836636",
+    "appId": "1:1069155836636:web:8aa2ce0c80a4320d584a19",
+    "databaseURL": ""
+}
+
+
+# Criação do Firebase Com as Credencias
+if not firebase_admin._apps:
+    cred = credentials.Certificate("another/anotherproject-5e811-firebase-adminsdk-fbsvc-407565d917.json")
+    default_app=firebase_admin.initialize_app(cred)
 
 
 #Configurações da Pagina
@@ -74,3 +101,8 @@ def inicio():
                         time.sleep(1)
                         status.empty()
        
+                
+        
+  
+  
+inicio()
