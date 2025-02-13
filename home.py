@@ -68,7 +68,7 @@ def decode_firebase_token(id_token):
 
 #Função para gerar a URL de autenticação do Google
 def get_google_auth_url():
-    auth_url = f"https://accounts.google.com/o/oauth2/auth?client_id=1069155836636-ekve034mfjluv4s6icus6kb7bi3ltpnr.apps.googleusercontent.com&redirect_uri={REDIRECT_URI}&response_type=code&scope=email profile&prompt=select_account"
+    auth_url = f"https://accounts.google.com/o/oauth2/auth?client_id=1069155836636-ekve034mfjluv4s6icus6kb7bi3ltpnr.apps.googleusercontent.com&redirect_uri=https://outracoisa.streamlit.app&response_type=code&scope=email profile&prompt=select_account"
     return auth_url
 
 
