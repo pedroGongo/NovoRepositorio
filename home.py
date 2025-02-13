@@ -73,11 +73,11 @@ def criar_div(titulo, texto,tempo):
 
 def inicio():
 
-        tab1 = st.tabs(["Enviar"])
+        
         db = firestore.client()
 
-        with tab1:
-            with st.form("formulario"):
+     
+        with st.form("formulario"):
                 st.header("Compartilhar")
                 option = st.selectbox("",("Ideia", "Reclamação"),label_visibility="hidden",key="Reclamação")
                 txt = st.text_area("Digite algo :")
