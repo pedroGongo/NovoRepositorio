@@ -48,7 +48,7 @@ if not firebase_admin._apps:
 #------------------ Variaveis Golbais ---------------------
 
 
-REDIRECT_URI = "http://localhost:8501"
+REDIRECT_URI = "https://outracoisa.streamlit.app/"
 url = "https://static.wixstatic.com/media/cd3bb0_75d00a426f3a490cad3623afffe0de08~mv2.png/v1/fill/w_238,h_77,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/logo_esprominho_versao%20Horizontal.png"
 psicologa = []
 associação = ["brg-6330@esprominho.pt"]
